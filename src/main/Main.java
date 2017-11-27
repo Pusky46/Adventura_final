@@ -95,6 +95,7 @@ public class Main extends Application {
         panelVychodu = new PanelVychodu(hra.getHerniPlan(),centerText,zadejPrikazTextField);
         panelVeci = new PanelVeci(hra.getHerniPlan(),centerText);
         
+        //pravá čast okna
         pravy.setLeft(panelBatohu.getList());
         pravy.setCenter(panelVychodu.getList());
         pravy.setRight(panelVeci.getList());
@@ -108,9 +109,9 @@ public class Main extends Application {
        
 //        TextoveRozhrani textoveRozhrani = new TextoveRozhrani(hra);
 //        textoveRozhrani.hraj();
-        Scene scene = new Scene(borderPane, 1200, 900);
+        Scene scene = new Scene(borderPane, 1400, 900);
 
-        primaryStage.setTitle("Moje Adventura");
+        primaryStage.setTitle("Upírí potulky");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
