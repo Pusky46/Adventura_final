@@ -44,6 +44,7 @@ public class PanelVychodu implements Observer
         list.setItems(data);
         list.setPrefWidth(100);
         
+        //Nastaví presúvanie sa po miestnostiach na klik 
         list.setOnMouseClicked(new EventHandler<MouseEvent>() 
         {
             @Override
@@ -75,6 +76,7 @@ public class PanelVychodu implements Observer
         return list;
       }
 
+    
     @Override
     public void update()
       {
@@ -87,7 +89,7 @@ public class PanelVychodu implements Observer
       }
     
     /**
-     * Metoda zaregistruje pozorovatele k hernímu plánu při spuštění nové hry.
+     * Metoda zaregistruje pozorovatele k hernímu plánu pri spustení novej hry.
      * @param plan
      */
     public void nastaveniHernihoPlanu (HerniPlan plan){

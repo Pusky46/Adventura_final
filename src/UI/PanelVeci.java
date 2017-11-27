@@ -41,6 +41,7 @@ public class PanelVeci implements Observer{
         list.setItems(data);
         list.setPrefWidth(200);
         
+        //nastavenie vecí do batohu na klik 
         list.setOnMouseClicked(new EventHandler<MouseEvent>() 
         {
             @Override
@@ -87,6 +88,7 @@ public class PanelVeci implements Observer{
     }
     
 
+    // Metoda priradí obrázok
     @Override 
     public void update() 
     {        
@@ -102,7 +104,7 @@ public class PanelVeci implements Observer{
     }
     
     /**
-     * Metoda zaregistruje pozorovatele k hernímu plánu při spuštění nové hry.
+     * Metoda zaregistruje pozorovatele k hernímu plánu pri spustení novej hry.
      * @param plan
      */
     public void nastaveniHernihoPlanu (HerniPlan plan){
