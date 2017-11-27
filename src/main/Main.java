@@ -46,6 +46,7 @@ public class Main extends Application {
     private PanelBatohu panelBatohu;
     private PanelVeci panelVeci;
 
+    //
     @Override
     public void start(Stage primaryStage) {
 
