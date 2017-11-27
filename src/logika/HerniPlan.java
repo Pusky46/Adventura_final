@@ -49,12 +49,12 @@ public class HerniPlan implements Subject{
      */
     private void zalozProstoryHry() {
         // vytvářejí se jednotlivé prostory
-        Prostor luka = new Prostor("lúka","Lúka, tu si sa ocitol a hľadáš cestu domov.", 260,450);
+        Prostor luka = new Prostor("luka","Lúka, tu si sa ocitol a hľadáš cestu domov.", 260,450);
         Prostor jazero = new Prostor("jazero", "strieborné jazero s horkým pokladom.", 380,350);
         Prostor dedina = new Prostor("dedina","konečne sa môžeš najesť.",130,350);
         Prostor les = new Prostor("les","les s jahodami, malinami a pramenem vody.", 190,200);
-        Prostor cistinka = new Prostor("čistinka","čistinka, na ktorej sa môžeš rozhodnúť kam ďalej.",350,200);
-        Prostor nadvorie = new Prostor("nádvorie","nádvorie, už len kúsok domov.",260,120);
+        Prostor cistinka = new Prostor("cistinka","čistinka, na ktorej sa môžeš rozhodnúť kam ďalej.",350,200);
+        Prostor nadvorie = new Prostor("nadvorie","nádvorie, už len kúsok domov.",260,120);
         Prostor hrad = new Prostor("hrad","hrad, konečne si v svojej svätini.",260,30);
         
         
@@ -82,9 +82,9 @@ public class HerniPlan implements Subject{
         Vec mince = new Vec("mince",true,"mince.jpg");
         Vec krv = new Vec("krv",true,"krv.jpg");
         Vec zlato = new Vec("zlato",true,"zlato.png");
-        Vec dyka = new Vec ("dýka",true,"dyka.jpg");
-        Vec klic = new Vec("klíč",true,"kluc.jpg");
-        Vec kamen = new Vec("kámen",false,"kamen.jpg");
+        Vec dyka = new Vec ("dyka",true,"dyka.jpg");
+        Vec klic = new Vec("klic",true,"kluc.jpg");
+        Vec kamen = new Vec("kamen",false,"kamen.jpg");
         
         // vložíme věci do prostorů
         jazero.vlozVec(mince);
